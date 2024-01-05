@@ -5,16 +5,16 @@
 
 int main(int argc, char *argv[])
 {
-/*
+
   printf("secret: [");
   FILE *fp = fopen("secret.txt", "r");
-  char s[64];
+  char s[64] = {'\0'};
   fscanf(fp, "%s", s);
   printf("%s]\n", s);
 
   fclose(fp);
-*/
-  printf("hello bb\n");
+
+  // printf("hello bb\n");
 
   return 0;
 }
