@@ -8,4 +8,4 @@ clean:
 	$(RM) $(CXX_OBJS) $(PROGS)
 
 first : bbexample.c 
-	gcc bbexample.c -o bbexample
+	gcc bbexample.c -o bbexample $(CFLAGS) $(LDFLAGS)
