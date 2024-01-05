@@ -5,7 +5,13 @@
 
 int main(int argc, char *argv[])
 {
-  printf("Hello Yocto World...\n");
+  printf("secret: [");
+  FILE *fp = fopen("secret.txt", "r");
+  char s[64];
+  fscanf(fp, "%s", s);
+  printf("%s]\n", s);
+
+  fclose(fp);
 
   return 0;
 }
