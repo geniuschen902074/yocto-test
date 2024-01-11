@@ -6,10 +6,12 @@
 int main(int argc, char *argv[])
 {
 
-  printf("secret: [");
-  FILE *fp = fopen("secret.txt", "r");
+  printf("secret: \n aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n[");
+  FILE *fp = fopen("/usr/bin/secret.txt", "r");
+  printf("bbbbbbbbbbbbbbbbbbbbbbbbbbbb\n");
   char s[64] = {'\0'};
-  fscanf(fp, "%s", s);
+  printf("cccccccccccccccccccccccccccc\n");
+  fscanf(fp, "%10s", s);
   printf("%s]\n", s);
 
   fclose(fp);
